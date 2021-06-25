@@ -8,7 +8,8 @@ def speak(str):
     speak.Speak(str)
 
 if __name__=="__main__":
-    r=requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=0e27771fa58e43e3840779b6fb23eef1")
+    apikey="Your ApiKey"
+    r=requests.get(f"https://newsapi.org/v2/top-headlines?country=in&apiKey={apikey}")
     data=r.content # this is string format and not parsed
     parsed=json.loads(data)
     for i in range(1,10):
