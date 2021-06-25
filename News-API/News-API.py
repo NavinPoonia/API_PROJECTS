@@ -14,10 +14,12 @@ if __name__=="__main__":
     parsed=json.loads(data)
     for i in range(1,10):
         title=parsed['articles'][i]['title']
+        print(title)
         speak(title)
         time.sleep(1)
         speak("The content is :")
         content=parsed['articles'][i]['content']
+        print(content)
         speak(content)
         time.sleep(3)
         speak("Next headline :")
