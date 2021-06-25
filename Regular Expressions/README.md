@@ -5,8 +5,11 @@
   
   str="""
   navinpoonia@gmail.com
+  
   xyz1@yahoo.com 95844
+  
   +9144 49569 abcddsd ampo@hotmail.com
+  
   abcdef@gmail.com
   """
   
